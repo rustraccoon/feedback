@@ -1,0 +1,35 @@
+name: Report a problem with a page
+description: Something on www.rustraccoon.com is broken, wrong or hard to use.
+title: 'Page problem: '
+labels: ['website']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for telling us. You can write in English or Burmese.
+        This report is public, so please leave out anything private.
+  - type: input
+    id: page
+    attributes:
+      label: Page address
+      description: The address of the page with the problem. (ပြဿနာရှိတဲ့ Page ရဲ့ လိပ်စာ)
+      placeholder: https://www.rustraccoon.com/en
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: What did you see? A screenshot helps. (ဘာကို တွေ့ခဲ့ပါသလဲ။ Screenshot ပါရင် ပိုကောင်းပါတယ်။)
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Optional. (မဖြည့်လည်း ရပါတယ်။)
+  - type: input
+    id: device
+    attributes:
+      label: Phone or computer, and browser
+      description: Optional. For example, "Android phone, Chrome".

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Something private, or a project to talk about
+    url: mailto:info@rustraccoon.com
+    about: Email us instead. Reports here are public.
